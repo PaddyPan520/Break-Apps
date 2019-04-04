@@ -1,0 +1,186 @@
+//1.定义对应变量，输出学生个人的信息。包括姓名，性别，年龄，电话。
+//package py.work;
+//
+//import java.util.Scanner;
+//
+//public class Homework1 {
+//	public static void main(String[] args) {
+//		String name="Paddy 彭";
+//		String num="17673058795";
+//		char ch='男';
+//		int age=13;
+//		System.out.println("姓名："+name+"\n性别："+ch+"\n年龄："+age+"\n电话："+num);
+//		
+//		
+//
+//	}
+//}
+
+//2.输入三个商品的价格以及购买数量，统计应付款的总金额。
+//package py.work;
+//import java.util.Scanner;
+//public class Thing {
+//
+//	public static void main(String[] args) {
+//		int a=0;//定义啤酒
+//		int b=0;//定义花生
+//		int c=0;//定义瓜子
+//		Scanner input=new Scanner(System.in);
+//		System.out.print("输入啤酒的价格:");
+//		int price1=input.nextInt();
+//		System.out.print("输入啤酒的数量:");
+//		int num1=input.nextInt();
+//		System.out.print("输入花生的价格:");
+//		int price2=input.nextInt();
+//		System.out.print("输入花生的数量:");
+//		int num2=input.nextInt();
+//		System.out.print("输入瓜子的价格:");
+//		int price3=input.nextInt();
+//		System.out.print("输入瓜子的数量:");
+//		int num3=input.nextInt();
+//		int sum=price1*num1+price2*num2+price3*num3;
+//		System.out.print("商品总价为："+sum);
+//
+//	}
+//
+//}
+
+//3.输入2个整数，进行(加减乘除模)运算。
+//package py.work;
+//import java.util.Scanner;
+//
+//public class Mathod {
+//
+//	public static void main(String[] args) {
+//		
+//		//int plus=a+b;
+//		//int mines=a-b;
+//		//int multiple=a*b;
+//		//int division=a/b;
+//
+//		double a=0;
+//		double b=0;
+//	
+//		
+//		Scanner input = new Scanner(System.in);
+//		System.out.print("请输入a：");
+//		 a=input.nextDouble();
+//		Scanner input1 = new Scanner(System.in);
+//		System.out.print("请输入b：");
+//		 b=input1.nextDouble();
+//		
+//			double plus=a+b;
+//			double mines=a-b;
+//			double multiple=a*b;
+//			double division=a/b;
+//			if(a<b) {
+//				mines=b-a;
+//			}else {
+//				mines=a-b;
+//			}
+//		System.out.print("两者之和是："+plus+"。");
+//		System.out.print("两者之差的绝对值是："+mines+"。");
+//		System.out.print("两者之积是："+multiple+"。");
+//		System.out.print("两者之模是："+division+"。");
+//	}
+//
+//}
+
+//4.输入矩形的长和宽，求其周长和面积
+//周长＝（长＋宽）×2
+//面积＝长×宽
+//package py.work;
+//import java.util.Scanner;
+//public class Rcetangle {
+//
+//	public static void main(String[] args) {
+//		double l=0;
+//		double k=0;
+//		Scanner input = new Scanner(System.in);
+//		System.out.print("矩形的长是：");
+//		l=input.nextInt();
+//		Scanner input1 = new Scanner(System.in);
+//		System.out.print("矩形的宽是：");
+//		k=input1.nextInt();
+//		
+//		double C=l*2+k*2;
+//		double S=l*k;
+//		System.out.print("周长是："+C);
+//		System.out.print("面积是："+S);
+//	}
+//
+//}
+//5.从键盘输入一个数，打印出这个数分别乘以1，2，……，10的乘积，如输入7，则打印：
+//    7*1＝7	7*2=14
+//    7*3=21	7*4=28
+//    7*5=35	7*6=42
+//    7*7=49	7*8=56
+//    7*9=63	7*10=70
+//package py.work;
+//
+//import java.util.Scanner;
+//
+//public class Demo3 {
+//
+//	public static void main(String[] args) {
+//
+//		Scanner input = new Scanner(System.in);
+//		System.out.println("请输入一个数：");
+//		double a = input.nextDouble();
+//		int j = 0;
+//
+//		for (j = 1; j <= 10; j++) {
+//			System.out.print(a + "*" + j + "=" + a * j + "  ");
+//			if (j % 2 == 0) {
+//				System.out.println("\n");
+//			}
+//
+//		}
+//
+//	}
+//
+//}
+//6.某公司为员工提供了基本工资、物价津贴及房租津贴。其中物价津贴占基本工资的40％，房租津贴占基本工资的20％。编写一个程序计算实领工资，要求输入员工的基本工资，计算应向该员工支付的实际工资。
+//package py.work;
+//import java.util.Scanner;
+//public class Salary {
+//
+//	public static void main(String[] args) {
+//		//int a=0;//基本工资
+//		Scanner input = new Scanner(System.in);
+//		System.out.print("请输入基本工资：");
+//		double a = input.nextDouble();//基本工资
+//		double b = a*0.4;//物价津贴
+//		double c = a*0.2;//房租津贴
+//		double d = a+b+c;//实际工资
+//		System.out.println("*****************************");
+//		System.out.println("基本工资："+a);
+//		System.out.println("物价津贴："+b);
+//		System.out.println("房租津贴："+c);
+//		System.out.println("实际工资："+d);
+//		System.out.println("*****************************");
+//	}
+//
+//}
+//
+//7.输入华氏温度，求摄氏温度
+//提示：将变量声明为double型
+//摄氏度＝5/9.0×（华氏度-32）
+//package py.work;
+//import java.util.Scanner;
+//public class Temperature {
+//
+//	public static void main(String[] args) {
+//		Scanner input = new Scanner(System.in);
+//		System.out.println("即将进行华氏度转摄氏度");
+//		System.out.print("请输入华氏度：");
+//		double a = input.nextDouble();
+//		
+//		double h=(5*a-5*32)/9;
+//		System.out.println("转换完是："+h+"℃");
+//	}
+//
+//}
+
+
+
