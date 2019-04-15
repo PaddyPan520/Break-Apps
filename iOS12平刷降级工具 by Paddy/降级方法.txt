@@ -1,0 +1,33 @@
+iOS12系统随意平刷方法
+
+
+
+
+手机准备工具：
+A9~A11设备请安装：Noncereboot12xx(iPhone6S以上)
+A7~A8设备请安装：Undecimus（iPhone5S、iPhone6）
+注意！请看着设备安装软件，另外A12设备暂时不支持。iPhoneX设备建议刷iOS12.1以上系统，因为iOS12.0降级成功后，会出现无法脸部识别功能。这个一定需要注意。
+
+检查是否有SHSH?
+如果你本机无SHSH，意味着无法降级想要系统版本，举个例子，查询到有iOS12.0SHSH，意味着我可以刷iOS12.0系统版本。
+
+如何查询SHSH
+在电脑里打开爱思助手-连接手机-刷机越狱-高级功能-下载SHSH即可看到，比如说，我查询到iOS12.0 SHSH文件，接着把SHSH下载到电脑桌面，再用爱思助手下载对应固件用于刷机
+
+
+
+
+开始刷机步骤：
+1.手机上安装Noncereboot12xx。
+2.SHSH文件，用记事本打开，按键盘Ctrl+F,搜索：generator,后面0x开头值就是G值，把它复制了。
+3.在手机打开Undecimus软件，选择底部Settings，再勾选Overwrite Boot Nonce选项，再把刚才G值粘贴到Boot Nonce里面。再点击底部Jailbreak，点击Jailbreak，即可固定G值，如果是iPhone6S以上设备，就打开Noncereboot12xx，等待一下，再输入G值就OK了。
+4.在电脑桌面创建一个文件夹，把SHSH、想刷固件、futurerestore.exe、开始刷机.bat全部放在里面。
+5（重点！）.再把SHSH文件重命名修改为：shsh.shsh2 (后缀也要改)。固件名称改为：A.ipsw
+6.打开 开始刷机.bat
+7.等待完成即可
+
+
+
+
+
+
